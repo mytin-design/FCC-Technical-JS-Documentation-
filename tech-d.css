@@ -1,0 +1,194 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+body {
+    display: grid;
+    grid-template-areas: 
+    "nava mano mano"
+    "nava mano mano"
+    "nava mano mano";
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+    background: #ffffff;
+
+
+}
+*/
+
+
+/*body {
+    display: grid;
+    grid-template-columns:350px 1fr;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+    background: #ffffff;
+}
+*/
+
+header {
+    padding: 18px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+#navbar {
+height: 100vh;
+width: 330px;
+overflow-y: scroll;
+position: fixed;
+
+}
+
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    padding: 15px;
+    border-bottom: 2px solid rgb(206, 201, 201);
+    border-top: 2px solid rgb(206, 201, 201);
+    text-decoration: none;
+    color: #000;
+
+}
+
+/* version 1.0
+.nav-link {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(206, 201, 201);
+    padding-top: 10px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    color: #000;
+}*/
+
+#main-doc {
+    border-left: 2px solid;
+    width: 100vw;
+    padding-left: 330px;
+    
+}
+
+
+.main-section {
+    padding: 28px;
+}
+
+h1 {
+    font-weight: 400;
+}
+.text {
+    padding: 10px;
+}
+
+/* find a way to set width as 100% so that the container fills entire width */
+
+/* the trick is - <code> is an inline element - as such we need to chnage display from inline to block */
+.code {
+    background: #eee;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+ul {
+    padding-left: 120px;
+}
+
+
+/* mobile design */
+
+@media screen and (max-width: 900px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #navbar {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .link-list {
+        display: flex;
+        flex-flow: column;
+        height: 250px;
+        border: 3px solid rgb(156, 154, 154);
+        overflow-y: scroll;
+    }
+
+    .nav-link {
+        padding: 20px;
+        border-bottom: 2px solid rgb(206, 201, 201);
+        border-top: 2px solid rgb(206, 201, 201);
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    header {
+        font-size: 15px;
+        
+    }
+
+    h1, h2, h3 {
+        font-weight: lighter;
+    }
+
+    #main-doc {
+        padding: 28px;
+        overflow-x: hidden;
+    }
+
+    .main-section {
+        padding: 20px;
+    }
+
+    ul {
+        padding-left: 100px;
+    }
+
+    .text {
+        padding: 10px;
+    }
+    
+    .code {
+    background: #eee;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+    
+}
+

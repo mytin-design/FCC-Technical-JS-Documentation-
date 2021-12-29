@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: grid;
+            grid-template-areas: 
+            "side1 side2"
+            "side1 side2"
+            "side1 side2";     
+        grid-gap: 10px; 
+        }
+
+        .one {
+            grid-area: side1;
+            grid-auto-columns: span 1/4;
+            border: 1px solid;
+        }
+
+        .two {
+            grid-area: side2;
+            border: 1px solid;
+
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                display: block;
+            }
+        }
+        .code {
+    background: #eee;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        <h2>section one</h2>
+        <code class="code">if (condition_1) {statement_1;} else if (condition_2) {statement_2;} 
+            else if (condition_n) {statement_n} else {statement_last;}</code>
+         
+            <code class="code coder">
+                if(condition) {statement_1 runs_if_condition_is_true;statement_2 runs_if_condition_is_true;} 
+                else { statement_3_runs_if_condition_is_false; statement_4_runs_if_condition_is_false;}
+            </code>
+    
+            <code class="code">
+                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
+                // THIS WILL CAUSE AN ERROR ALSO function f() {const g = 5; var g; //statements }
+            </code>
+    </div>
+
+    <div class="two">
+
+        <h1>Section two</h1>
+        <code class="code">if (condition_1) {statement_1;} else if (condition_2) {statement_2;} 
+            else if (condition_n) {statement_n} else {statement_last;}</code>
+         
+            <code class="code coder">
+                if(condition) {statement_1 runs_if_condition_is_true;statement_2 runs_if_condition_is_true;} 
+                else { statement_3_runs_if_condition_is_false; statement_4_runs_if_condition_is_false;}
+            </code>
+    
+            <code class="code">
+                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
+                // THIS WILL CAUSE AN ERROR ALSO function f() {const g = 5; var g; //statements }
+            </code>
+    </div>
+</body>
+</html>
